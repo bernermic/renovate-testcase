@@ -10,7 +10,7 @@ module.exports = {
       "fileMatch": ["Makefile$"],
       "matchStrings": ["CHART_VERSION \\?= (?<currentValue>.*?)\\n"],
       "datasourceTemplate": "helm",
-      "depNameTemplate": "helm"
+      "depNameTemplate": "github-tags"
     }
   ],
   "packageRules": [
