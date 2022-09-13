@@ -10,7 +10,8 @@ module.exports = {
       "fileMatch": ["Makefile$"],
       "matchStrings": ["CHART_VERSION=(?<currentValue>.*?)\\n"],
       "datasourceTemplate": "github-tags",
-      "depNameTemplate": "kubernetes/ingress-nginx"
+      "depNameTemplate": "kubernetes/ingress-nginx",
+      "versioning": "regex:^(?<compatibility>.*)-(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)?$"
     }
   ],
   "packageRules": [
