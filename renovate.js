@@ -9,8 +9,8 @@ module.exports = {
       "description": "Update helmchart",
       "fileMatch": ["Makefile$"],
       "matchStrings": ["CHART_VERSION \\?= (?<currentValue>.*?)\\n"],
-      "datasourceTemplate": "helm",
-      "depNameTemplate": "github-tags"
+      "datasourceTemplate": "github-tags",
+      "depNameTemplate": "helm"
     }
   ],
   "packageRules": [
