@@ -1,1 +1,1 @@
-CHART_VERSION ?= 4.2.3
+CHART_VERSION=helm-chart-4.2.3

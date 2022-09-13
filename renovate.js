@@ -8,9 +8,9 @@ module.exports = {
     {
       "description": "Update helmchart",
       "fileMatch": ["Makefile$"],
-      "matchStrings": ["CHART_VERSION \\?= (?<currentValue>.*?)\\n"],
+      "matchStrings": ["CHART_VERSION=(?<currentValue>.*?)\\n"],
       "datasourceTemplate": "github-tags",
-      "depNameTemplate": "helm"
+      "depNameTemplate": "kubernetes/ingress-nginx"
     }
   ],
   "packageRules": [
@@ -22,4 +22,3 @@ module.exports = {
     }
   ]
 }
-
